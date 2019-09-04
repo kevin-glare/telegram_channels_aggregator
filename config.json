@@ -1,0 +1,9 @@
+{
+  "ATTENTION": "These example values won't work. You must set your own data",
+  "api_id": 123456,
+  "api_hash": "a0a87084dc8053ad89e754c7d3643d13",
+  "mobile_number": "+79000000000",
+  "my_channel": "telegram",
+  "channel_ids": [1234567890, 2134567890, 3124567890]
+}
+

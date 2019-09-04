@@ -1,0 +1,7 @@
+*.session
+.idea
+/venv
+__pycache__/
+*.py[cod]
+.cache
+./test.py
