@@ -6,10 +6,9 @@ with open('config.json') as json_file:
     client = TelegramClient(config['my_channel'], config['api_id'], config['api_hash'])
 
 
-@client.on(events.NewMessage)
+@client.on(events.NewMessage(chats=config['channel_ids'])) 
 async def _(event):
-    if isinstance(event.original_update, types.UpdateNewChannelMessage) and event.message.to_id.channel_id in config[
-        'channel_ids']: await client.send_message(config['my_channel'], event.message)
+    if isinstance(event.original_update, types.UpdateNewChannelMessage): await client.send_message(config['my_channel'], event.message)
 
 
 if __name__ == '__main__':
