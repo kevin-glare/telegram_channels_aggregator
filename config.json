@@ -3,7 +3,18 @@
   "api_id": 123456,
   "api_hash": "a0a87084dc8053ad89e754c7d3643d13",
   "mobile_number": "+79000000000",
-  "my_channel": "telegram",
-  "channel_ids": [1234567890, 2134567890, 3124567890]
+  "channels": {
+    "my_channel_1": [1234567890, 2134567890, 3124567890],
+    "my_channel_2": [1234567890, 2134567890, 3124567890]
+  },
+  "functions": {
+    "change_links": {
+      "status": true
+    },
+    "check_bad_words": {
+      "status": true,
+      "bad_words": ["реклама", "конкурс", "опрос", "голосование"]
+    }
+  }
 }
 
